@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Research Assistant Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>📄 AI Research Assistant</h1>
+    <p class="subtitle">Upload a PDF, then ask questions about it — answered using only its content.</p>
+ 
+    <section class="upload-box">
+      <input type="file" id="pdf-input" accept="application/pdf" />
+      <button id="upload-btn">Upload &amp; Process</button>
+      <p id="upload-status"></p>
+    </section>
+ 
+    <section class="chat-box">
+      <div id="chat-log"></div>
+      <div class="chat-input-row">
+        <input type="text" id="question-input" placeholder="Ask something about the document..." />
+        <button id="ask-btn">Ask</button>
+      </div>
+    </section>
+  </div>
+ 
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

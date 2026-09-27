@@ -1,0 +1,63 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f7f9;
+  margin: 0;
+  padding: 2rem;
+}
+ 
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+ 
+h1 { margin-top: 0; }
+.subtitle { color: #666; margin-bottom: 1.5rem; }
+ 
+.upload-box {
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+ 
+#upload-btn, #ask-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+ 
+#upload-btn:hover, #ask-btn:hover { background: #4338ca; }
+ 
+#upload-status { font-size: 0.85rem; color: #555; margin-top: 0.5rem; }
+ 
+.chat-box { display: flex; flex-direction: column; gap: 1rem; }
+ 
+#chat-log {
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+ 
+.msg { margin-bottom: 1rem; }
+.msg.user { text-align: right; color: #4f46e5; }
+.msg.bot { text-align: left; color: #222; }
+.msg .sources { font-size: 0.75rem; color: #888; margin-top: 0.25rem; }
+ 
+.chat-input-row { display: flex; }
+#question-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
